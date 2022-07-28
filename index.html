@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing 1-200</title>
+</head>
+<body>
+
+    <script>
+        /* Assignment One
+        Write a program that uses console.log to print all the numbers from 1 to 200, with two exceptions. For numbers divisible by 6, print "Shams" instead of the number, and for numbers divisible by 8 (and not 6), print "TIIDELAB" instead. When you have that working, modify your program to print "ShamsTIIDELAB" for numbers that are divisible by both 6 and 8 (and still print "Shams" or "TIIDELAB" for numbers divisible by only one of those). */
+
+        for (var i = 1; i <= 200; i++) {
+            
+            if (i % 6 === 0) {
+                console.log("Shams");
+            }
+            else if (i % 8 === 0) {
+                console.log("TIIDELAB");
+            }
+            else if (i % 6 === 0 && i % 8 === 0) {
+                console.log("ShamsTIIDELAB");
+            }
+            else {
+                console.log(i);
+            }
+
+        }
+    </script>
+</body>
+</html>
