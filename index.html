@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,20 +15,25 @@
 
         for (var i = 1; i <= 200; i++) {
             
-            if (i % 6 === 0) {
+            if (i % 6 === 0 && i % 8 === 0) {
+                console.log("ShamsTIIDELAB");
+            } 
+            
+            else if (i % 6 === 0) {
                 console.log("Shams");
             }
             else if (i % 8 === 0) {
                 console.log("TIIDELAB");
             }
-            else if (i % 6 === 0 && i % 8 === 0) {
-                console.log("ShamsTIIDELAB");
-            }
+            
             else {
                 console.log(i);
+            
             }
+        
+        
+        }    
 
-        }
     </script>
 </body>
 </html>
